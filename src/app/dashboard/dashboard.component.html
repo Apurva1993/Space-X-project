@@ -12,24 +12,24 @@
                 <hr>
             </div>
             <div class="year-container white-background">
-                <div *ngFor="let year of constantYearArray" class="space-button-unselected white-background margin-top padding-10" (click)="filterYear(year)"> 
+                <button *ngFor="let year of constantYearArray" class=" white-background margin-top padding-10" [ngClass]="missileState.year == year ? 'space-button-selected': 'space-button-unselected'" (click)="filterYear(year)"> 
                     {{year}}
-                </div>
+                </button>
             </div>
             <div class="successful-launch white-background center margin-top">
                 {{constantHolder.successfulLaunch}}
                 <hr>
                 <div class="year-container white-background">
-                    <div class="space-button-unselected white-background padding-10 margin-top" (click)="filterSuccessfulLaunch(true)">{{constantHolder.trueConstant}}</div>
-                    <div class="space-button-unselected white-background padding-10 margin-top" (click)="filterSuccessfulLaunch(false)">{{constantHolder.falseConstant}}</div>
+                    <div class="space-button-unselected white-background padding-10 margin-top" [ngClass]="missileState.launch == true ? 'space-button-selected': 'space-button-unselected'" (click)="filterSuccessfulLaunch(true)">{{constantHolder.trueConstant}}</div>
+                    <div class="space-button-unselected white-background padding-10 margin-top" [ngClass]="missileState.launch == false ? 'space-button-selected': 'space-button-unselected'" (click)="filterSuccessfulLaunch(false)">{{constantHolder.falseConstant}}</div>
                 </div>
             </div>
             <div class="successful-Landing white-background center margin-top">
                 {{constantHolder.successfulLanding}}
                 <hr>
                 <div class="year-container white-background">
-                    <div class="space-button-unselected white-background padding-10 margin-top" (click)="filterSuccessfulLanded(true)">{{constantHolder.trueConstant}}</div>
-                    <div class="space-button-unselected white-background padding-10 margin-top" (click)="filterSuccessfulLanded(false)">{{constantHolder.falseConstant}}</div>
+                    <div class="space-button-unselected white-background padding-10 margin-top" [ngClass]="missileState.landed == true ? 'space-button-selected': 'space-button-unselected'" (click)="filterSuccessfulLanded(true)">{{constantHolder.trueConstant}}</div>
+                    <div class="space-button-unselected white-background padding-10 margin-top" [ngClass]="missileState.landed == false ? 'space-button-selected': 'space-button-unselected'" (click)="filterSuccessfulLanded(false)">{{constantHolder.falseConstant}}</div>
                 </div>
             </div>
         </div>

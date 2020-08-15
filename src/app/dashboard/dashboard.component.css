@@ -51,11 +51,15 @@ hr {
 }
 
 .space-button-unselected {
-    background-color: lightgreen;
+    background-color: #C5E09B;
+    border: none;
+    border-radius: 3px;
 }
 
 .space-button-selected {
-    background-color: darkgreen;
+    background-color: #75A604;
+    border: none;
+    border-radius: 3px;
 }
 
 .mission-patch {
