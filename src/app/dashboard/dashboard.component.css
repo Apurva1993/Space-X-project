@@ -82,13 +82,13 @@ hr {
 
 @media(min-width:415px) and (max-width: 700px) {
     .filter-section {
-        width: 20%;
+        width: 35%;
         max-height: 480px;
     }
     .main-section {
-        width: 30%;
+        width: 55%;
         display: grid;
-        grid-template-columns: repeat(2, minmax(250px, 1fr));
+        grid-template-columns: repeat(1, minmax(250px, 1fr));
     }
 }
 
@@ -99,9 +99,9 @@ hr {
         max-height: 480px;
     }
     .main-section {
-        width: 30%;
+        width: 74%;
         display: grid;
-        grid-template-columns: repeat(3, minmax(250px, 1fr));
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
     }
 }
 
@@ -112,9 +112,9 @@ hr {
         max-height: 480px;
     }
     .main-section {
-        width: 65%;
+        width: 75%;
         display: grid;
-        grid-template-columns: repeat(4, minmax(250px, 1fr));
+        grid-template-columns: repeat(3, minmax(250px, 1fr));
     }
 }
 
