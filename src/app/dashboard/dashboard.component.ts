@@ -63,15 +63,7 @@ export class DashboardComponent implements OnInit {
   processDataforInitialLoad() {
     this.processedData = [...this.initialData];
   }
-
-  // filterYear(year: number) {
-  //   /** Store this year and check if any other parameter is present */
-  //   this.missileState.year = year;
-  //   this.processedData = this.initialData;
-  //   this.location.replaceState("/year");
-  //   this.service.filterDataObserver.next(this.processedData.filter(item => item.launch_year == year));
-  // }
-
+  
   /** filter on the basis of year */
   filterYear(year: number) {
     /** Store this in the missileState */
