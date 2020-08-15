@@ -90,9 +90,9 @@ hr {
         max-height: 480px;
     }
     .main-section {
-        width: 55%;
+        width: 40%;
         display: grid;
-        grid-template-columns: repeat(1, minmax(250px, 1fr));
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
     }
 }
 
@@ -103,7 +103,7 @@ hr {
         max-height: 480px;
     }
     .main-section {
-        width: 74%;
+        width: 70%;
         display: grid;
         grid-template-columns: repeat(2, minmax(250px, 1fr));
     }
@@ -116,7 +116,7 @@ hr {
         max-height: 480px;
     }
     .main-section {
-        width: 75%;
+        width: 74%;
         display: grid;
         grid-template-columns: repeat(3, minmax(250px, 1fr));
     }
