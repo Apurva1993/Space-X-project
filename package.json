@@ -14,8 +14,7 @@
     "build:ssr": "ng build --prod && ng run Space-X-program:server:production",
     "prerender": "ng run Space-X-program:prerender",
     "postinstall": "npm run build:ssr",
-    "start:heroku": "node dist/server"
-
+    "start:heroku": "node dist/Space-X-program/server"
   },
   "private": true,
   "dependencies": {
