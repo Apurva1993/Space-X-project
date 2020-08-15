@@ -18,14 +18,19 @@ Enhanced performace by utilising Server Side Rendering.
 
 # Responsive Screenshots
 
+Iphone screenshot
+
 ![image](https://user-images.githubusercontent.com/69707404/90322489-7a56dc00-df72-11ea-94e7-63c758e87cdd.png)
 
+Ipad screenshot
 
 ![image](https://user-images.githubusercontent.com/69707404/90322536-2a2c4980-df73-11ea-993a-d4f0c5c514d1.png)
 
+Laptop Screenshot
 
 ![image](https://user-images.githubusercontent.com/69707404/90322596-a9218200-df73-11ea-8a8a-0831374cd940.png)
 
+Desktop Screenshot
 
 ![image](https://user-images.githubusercontent.com/69707404/90322651-7461fa80-df74-11ea-829f-51c3b82ffed0.png)
 
