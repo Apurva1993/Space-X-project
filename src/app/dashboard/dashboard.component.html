@@ -1,0 +1,63 @@
+<div class="container">
+    <div class="heading">
+        <span>{{constantHolder.header}}</span>
+    </div>
+    <div class="sub-container">
+        <div class="filter-section">
+            <div class="sub-heading">
+                <span class="white-background">Filters</span>
+            </div>
+            <div class="white-background center">
+                {{constantHolder.launchYear}}
+                <hr>
+            </div>
+            <div class="year-container white-background">
+                <div *ngFor="let year of constantYearArray" class="year-slab white-background" (click)="filterYear(year)"> 
+                    {{year}}
+                </div>
+            </div>
+            <div class="successful-launch white-background center">
+                {{constantHolder.successfulLaunch}}
+                <hr>
+                <div class="year-container">
+                    <div class="year-slab white-background" (click)="filterSuccessfulLaunch(true)">{{constantHolder.trueConstant}}</div>
+                    <div class="year-slab white-background" (click)="filterSuccessfulLaunch(false)">{{constantHolder.falseConstant}}</div>
+                </div>
+            </div>
+            <div class="successful-Landing white-background center">
+                {{constantHolder.successfulLanding}}
+                <hr>
+                <div class="year-container">
+                    <div class="year-slab white-background" (click)="filterSuccessfulLanded(true)">{{constantHolder.trueConstant}}</div>
+                    <div class="year-slab white-background" (click)="filterSuccessfulLanded(false)">{{constantHolder.falseConstant}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="main-section">
+            <div *ngFor="let card of processedData">
+                <div class="mission-details-card">
+                    <div class="mission-patch ">
+                        <img src={{card.links.mission_patch}} alt="mission-patch">
+                    </div>
+                    <div class="white-background center">
+                        <span class="white-background">{{card.mission_name}}#{{card.flight_number}}</span>
+                    </div>
+                    <div  class="white-background center">
+                        <span class="white-background">{{constantHolder.missionIds}}:{{card.mission_id ? card.mission_id : 0}}</span>
+                    </div>
+                    <div  class="white-background center">
+                        <span  class="white-background">{{constantHolder.launchYear}}:{{card.launch_year}}</span>
+                    </div>
+                    <div class="white-background center">
+                        <span class="white-background">{{constantHolder.successfulLaunch}}:{{card.launch_success === null ? null : card.launch_success}}</span>
+                    </div>
+                    <div class="white-background center">
+                        <span class="white-background">{{constantHolder.successfulLanding}}:
+                            {{card.rocket.first_stage.cores? card.rocket.first_stage.cores[0].land_success: false}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  
