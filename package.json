@@ -8,7 +8,11 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "heroku-postbuild": "ng build --prod"
+    "heroku-postbuild": "ng build --prod",
+    "dev:ssr": "ng run Space-X-program:serve-ssr",
+    "serve:ssr": "node dist/Space-X-program/server/main.js",
+    "build:ssr": "ng build --prod && ng run Space-X-program:server:production",
+    "prerender": "ng run Space-X-program:prerender"
   },
   "private": true,
   "dependencies": {
@@ -19,7 +23,9 @@
     "@angular/forms": "~10.0.9",
     "@angular/platform-browser": "~10.0.9",
     "@angular/platform-browser-dynamic": "~10.0.9",
+    "@angular/platform-server": "~10.0.9",
     "@angular/router": "~10.0.9",
+    "@nguniversal/express-engine": "^10.0.2",
     "express": "^4.17.1",
     "path": "^0.12.7",
     "rxjs": "^6.5.5",
@@ -31,6 +37,8 @@
     "@angular-devkit/build-angular": "~0.1000.6",
     "@angular/cli": "~10.0.6",
     "@angular/compiler-cli": "~10.0.9",
+    "@nguniversal/builders": "^10.0.2",
+    "@types/express": "^4.17.0",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",

@@ -39,23 +39,4 @@ export class DashboardService {
     }
     return url;
   }
-
-
-  // getLaunchSuccessFilterData() {
-  //   this.http.get(this.constantVariable.launchSuccessFilterURL).subscribe(response => {
-  //     this.filterDataObserver.next(response)
-  //   });
-  // }
-
-  // getlaunchAndLandFilterURL() {
-  //   this.http.get(this.constantVariable.launchAndLandFilterURL).subscribe(response => {
-  //     this.filterDataObserver.next(response)
-  //   });
-  // }
-
-  // getallFilterURL() {
-  //   this.http.get(this.constantVariable.allFilterURL).subscribe(response => {
-  //     this.filterDataObserver.next(response)
-  //   });
-  // }
 }
