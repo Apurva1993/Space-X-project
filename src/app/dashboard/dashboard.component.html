@@ -12,34 +12,34 @@
                 <hr>
             </div>
             <div class="year-container white-background">
-                <div *ngFor="let year of constantYearArray" class="year-slab white-background" (click)="filterYear(year)"> 
+                <div *ngFor="let year of constantYearArray" class="space-button-unselected white-background margin-top padding-10" (click)="filterYear(year)"> 
                     {{year}}
                 </div>
             </div>
-            <div class="successful-launch white-background center">
+            <div class="successful-launch white-background center margin-top">
                 {{constantHolder.successfulLaunch}}
                 <hr>
-                <div class="year-container">
-                    <div class="year-slab white-background" (click)="filterSuccessfulLaunch(true)">{{constantHolder.trueConstant}}</div>
-                    <div class="year-slab white-background" (click)="filterSuccessfulLaunch(false)">{{constantHolder.falseConstant}}</div>
+                <div class="year-container white-background">
+                    <div class="space-button-unselected white-background padding-10 margin-top" (click)="filterSuccessfulLaunch(true)">{{constantHolder.trueConstant}}</div>
+                    <div class="space-button-unselected white-background padding-10 margin-top" (click)="filterSuccessfulLaunch(false)">{{constantHolder.falseConstant}}</div>
                 </div>
             </div>
-            <div class="successful-Landing white-background center">
+            <div class="successful-Landing white-background center margin-top">
                 {{constantHolder.successfulLanding}}
                 <hr>
-                <div class="year-container">
-                    <div class="year-slab white-background" (click)="filterSuccessfulLanded(true)">{{constantHolder.trueConstant}}</div>
-                    <div class="year-slab white-background" (click)="filterSuccessfulLanded(false)">{{constantHolder.falseConstant}}</div>
+                <div class="year-container white-background">
+                    <div class="space-button-unselected white-background padding-10 margin-top" (click)="filterSuccessfulLanded(true)">{{constantHolder.trueConstant}}</div>
+                    <div class="space-button-unselected white-background padding-10 margin-top" (click)="filterSuccessfulLanded(false)">{{constantHolder.falseConstant}}</div>
                 </div>
             </div>
         </div>
         <div class="main-section">
             <div *ngFor="let card of processedData">
                 <div class="mission-details-card">
-                    <div class="mission-patch ">
-                        <img src={{card.links.mission_patch}} alt="mission-patch">
+                    <div class=" white-background center">
+                        <img class="mission-patch" src={{card.links.mission_patch}} alt="mission-patch">
                     </div>
-                    <div class="white-background center">
+                    <div class="white-background center margin-top">
                         <span class="white-background">{{card.mission_name}}#{{card.flight_number}}</span>
                     </div>
                     <div  class="white-background center">
